@@ -1,0 +1,86 @@
+h1 {
+    text-align: center;
+    color: #FFB300;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+h4 {
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin:0 10%;
+}
+
+form {
+    margin-bottom: 5%;
+    flex-direction: column;
+}
+
+form div {
+    margin: 10px auto;
+}
+
+.container {
+    width: 40%;
+    display: flex;
+}
+
+.container div{
+    margin-right: 10px;
+}
+
+input {
+    width: 250px;
+    border: 1px solid #a7a7a7;
+    border-radius: 10px;
+    padding: 10px 30px
+}
+
+button {
+    background-color: #FFB300;
+    border: solid 2px #FFB300;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 1rem;
+    margin: 50px auto 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #FFF3E3;
+    color: black;
+}
+
+.address input{
+    width: 160px;
+}
+
+select {
+    width: 160px;
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid #a7a7a7;
+    border-radius: 10px;
+}
+
+.visibleLink {
+    color: blue;
+    text-decoration: underline blue solid;
+}
+
+.buttons {
+    text-align: center;
+}
+
+/* Adds asterisk to labels for required inputs */
+label:has(+ input:required):after {
+    content: ' *';
+    color: red;
+}
